@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-12">
+    <form [formGroup]="shoppingItemForm">
+      <div class="row">
+        <div class="col-7">
+          <div class="form-group">
+            <label for="itemName" class="input-title">Item Name</label>
+            <input type="text" class="form-control" id="itemName" formControlName="itemName"
+              placeholder="Item Name..." />
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="form-group">
+            <label for="itemAmount" class="input-title">Item Name</label>
+            <input type="number" class="form-control" id="itemAmount" formControlName="itemAmount"
+              placeholder="Item Amount..." />
+          </div>
+        </div>
+      </div>
+
+      <div class="form-btn-action mt-4">
+        <button mat-flat-button color="primary" class="my-2 mx-1">Add</button>
+        <button mat-flat-button color="warn" class="my-2 mx-1">Delete</button>
+        <button mat-flat-button color="accent" class="my-2 mx-1">Clear</button>
+
+
+      </div>
+    </form>
+  </div>
+</div>

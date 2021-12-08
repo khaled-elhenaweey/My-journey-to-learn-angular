@@ -1,0 +1,12 @@
+<!-- string interpolation -->
+<p>Hi, My Name Is {{userName}} </p>
+<!-- property binding -->
+<a href="" [hidden]="!userWorkState">{{userWorkState}} + {{userName}}</a>
+<!-- event binding -->
+<button (click)="creatEventBinding()">{{userWorkState}}</button>
+<!-- two way binding -->
+<input type="text" (input)="liveSearch($event)">
+<p>{{searchData}}</p>
+<!-- easy way  -->
+<input type="text" [(ngModel)]="searchData">
+<p>{{searchData}}</p>
